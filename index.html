@@ -1,0 +1,183 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Yori Jomo</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Jost:wght@300;400&family=Italianno&display=swap" rel="stylesheet" />
+    <!-- Skift filnavnet til dit framework. custom.css skal komme efter -->
+    <link rel="stylesheet" href="struktur.css" />
+    <link rel="stylesheet" href="custom.css" />
+  </head>
+  <body>
+    <!-- ===== NAVBAR ===== -->
+    <header class="navbarfixed nav">
+      <div class="nav-inner">
+        <a class="logo" href="#top">Yori Jomo</a>
+
+        <ul class="nav-links">
+          <li class="nav-item has-dropdown">
+            <a href="#shoes">Shop</a>
+
+            <div class="nav-dropdown">
+              <ul class="nav-dropdown-links">
+                <li><a href="#shoes">Shoes</a></li>
+                <li><a href="#belts">Belts</a></li>
+              </ul>
+              <div class="nav-dropdown-tiles">
+                <a class="nav-tile" href="#shoes"><img src="filer/SHOES.png" alt="Shoes" /></a>
+                <a class="nav-tile" href="#belts"><img src="filer/BELTS.png" alt="Belts" /></a>
+              </div>
+            </div>
+          </li>
+          <li class="nav-item"><a href="#about">About</a></li>
+          <li class="nav-item"><a href="#contact">Contact</a></li>
+        </ul>
+
+        <button class="navicon" type="button" aria-label="Menu" aria-expanded="false" aria-controls="mobile-menu"><span></span><span></span><span></span></button>
+      </div>
+
+      <div class="mobile-menu hidden" id="mobile-menu">
+        <ul>
+          <li><a href="#shoes">Shoes</a></li>
+          <li><a href="#belts">Belts</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </header>
+
+    <main id="top">
+      <!-- ===== HERO ===== -->
+      <section class="hero">
+        <img class="hero-img" src="Filer/HERO.png" alt="" />
+        <h1 class="hero-title">Yori Jomo</h1>
+        <p class="hero-tagline">Scandinavian simplicity with traditional Italian shoemaking</p>
+      </section>
+
+      <!-- ===== STORE KATEGORI-KORT ===== -->
+      <section class="grid grid-nogap">
+        <a href="#shoes" class="big-card col-12 col-sm-6">
+          <img class="big-card-img" src="filer/SHOES.png" alt="" />
+          <img class="big-card-img big-card-img-hover" src="images/shoes-hover.jpg" alt="" />
+          <span class="big-card-label">Shoes</span>
+        </a>
+
+        <a href="#belts" class="big-card col-12 col-sm-6">
+          <img class="big-card-img" src="filer/BELTS.png" alt="" />
+          <img class="big-card-img big-card-img-hover" src="images/belts-hover.jpg" alt="" />
+          <span class="big-card-label">Belts</span>
+        </a>
+      </section>
+
+      <!-- ===== PRODUKTER ===== -->
+      <section class="section section--first" id="shoes">
+        <h2 class="section-title">Shoes</h2>
+
+        <div class="grid grid-nogap">
+          <a href="#" class="product-card col-12 col-sm-4">
+            <div class="product-card-media">
+              <img class="product-card-img" src="filer/DAKOTA1.png" alt="DAKOTA Fisherman Sandals Nappa Chestnut" />
+              <img class="product-card-img product-card-img-hover" src="filer/DAKOTA2.png" alt="" />
+            </div>
+            <div class="product-card-info">
+              <p class="product-card-title">DAKOTA Fisherman Sandals Nappa Chestnut</p>
+              <p class="product-card-price">2.100,00 kr</p>
+            </div>
+          </a>
+
+          <a href="#" class="product-card col-12 col-sm-4">
+            <div class="product-card-media">
+              <img class="product-card-img" src="filer/Elise1.png" alt="ELISE Flat Nappa Red" />
+              <img class="product-card-img product-card-img-hover" src="filer/Elise2.png" alt="" />
+            </div>
+            <div class="product-card-info">
+              <p class="product-card-title">ELISE Flat Nappa Red</p>
+              <p class="product-card-price">1.800,00 kr</p>
+            </div>
+          </a>
+
+          <a href="#" class="product-card col-12 col-sm-4">
+            <div class="product-card-media">
+              <img class="product-card-img" src="filer/Lennon1.png" alt="LENNON Fisherman Sandals Nappa Black" />
+              <img class="product-card-img product-card-img-hover" src="filer/Lennon2.png" alt="" />
+            </div>
+            <div class="product-card-info">
+              <p class="product-card-title">LENNON Fisherman Sandals Nappa Black</p>
+              <p class="product-card-price">2.100,00 kr</p>
+            </div>
+          </a>
+        </div>
+      </section>
+
+      <!-- ===== GALLERI ===== -->
+      <section class="section" id="belts">
+        <h2 class="section-title">Shoes</h2>
+
+        <div class="gallery">
+          <a href="#"><img src="filer/gallery1.png" alt="" /></a>
+          <a href="#"><img src="filer/gallery2.png" alt="" /></a>
+          <a href="#"><img src="filer/gallery3.png" alt="" /></a>
+          <a href="#"><img src="filer/gallery4.png" alt="" /></a>
+          <a href="#"><img src="filer/gallery5.png" alt="" /></a>
+        </div>
+      </section>
+    </main>
+
+    <!-- ===== FOOTER ===== -->
+    <footer class="container" id="contact">
+      <a class="footer-logo" href="#top">Yori Jomo</a>
+
+      <div class="grid">
+        <div class="col-12 col-md-7 m-b-xl">
+          <div class="signup">
+            <h2 class="signup-title">Join our email list</h2>
+            <p class="signup-text">Get exclusive deals and early access to new products.</p>
+            <form class="signup-form" action="#" method="post">
+              <label class="sr-only" for="email">Email address</label>
+              <input type="email" id="email" name="email" placeholder="Email address" required />
+              <button type="submit" aria-label="Sign up">→</button>
+            </form>
+          </div>
+        </div>
+
+        <ul class="footer-links col-6 col-md-3">
+          <li><a href="#">Refund policy</a></li>
+          <li><a href="#">Privacy policy</a></li>
+          <li><a href="#">Terms of service</a></li>
+          <li><a href="#">Shipping policy</a></li>
+          <li><a href="#">Contact information</a></li>
+          <li><a href="#">Legal notion</a></li>
+        </ul>
+
+        <ul class="footer-links col-6 col-md-2">
+          <li><a href="#">Instagram</a></li>
+          <li><a href="#">Facebook</a></li>
+        </ul>
+      </div>
+
+      <p class="footer-copy">©2026 Yori Jomo</p>
+    </footer>
+
+    <script>
+      const nav = document.querySelector(".nav");
+      const hero = document.querySelector(".hero");
+
+      // Skift til "scrolled"-navbar, når bunden af hero når navbaren
+      new IntersectionObserver(([entry]) => nav.classList.toggle("is-scrolled", !entry.isIntersecting), { rootMargin: `-${nav.offsetHeight}px 0px 0px 0px` }).observe(hero);
+
+      // Mobilmenu
+      const toggle = document.querySelector(".navicon");
+      const menu = document.querySelector("#mobile-menu");
+      toggle.addEventListener("click", () => {
+        const open = !menu.classList.toggle("hidden");
+        nav.classList.toggle("menu-open", open);
+        toggle.setAttribute("aria-expanded", open);
+        document.body.style.overflow = open ? "hidden" : "";
+      });
+    </script>
+  </body>
+</html>
