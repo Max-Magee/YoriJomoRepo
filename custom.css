@@ -263,9 +263,6 @@ body {
   object-fit: cover;
   transition: opacity 0.3s ease;
 }
-.big-card-img-hover {
-  opacity: 0;
-}
 
 /* Pressed-lag */
 .big-card::after {
@@ -284,22 +281,15 @@ body {
   font-weight: var(--font-weight-normal);
   letter-spacing: 0.05em;
   line-height: 1.5;
-  transition: color 0.3s ease;
 }
 
 @media (hover: hover) {
-  .big-card:hover .big-card-img-hover {
-    opacity: 1;
-  }
-  .big-card:hover .big-card-label {
-    color: var(--color-bright);
+  .big-card:hover .big-card-img {
+    opacity: 0;
   }
 }
-.big-card:focus-visible .big-card-img-hover {
-  opacity: 1;
-}
-.big-card:focus-visible .big-card-label {
-  color: var(--color-bright);
+.big-card:focus-visible .big-card-img {
+  opacity: 0;
 }
 
 .big-card:active::after {
