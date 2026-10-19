@@ -92,7 +92,7 @@ class Login extends HTMLElement {
       e.preventDefault();
       if (this.shadowRoot.querySelector("input[name=pass]").value === "kea") {
         document.querySelector("#totally-delete-me").remove();
-        localStorage.setItem("iform-totally-logged-in", true);
+        sessionStorage.setItem("iform-totally-logged-in", true);
       }
     });
   }
@@ -102,7 +102,7 @@ class Login extends HTMLElement {
 }
 customElements.define("iform-login", Login);
 window.addEventListener("load", () => {
-  if (!localStorage.getItem("iform-totally-logged-in")) {
+  if (!sessionStorage.getItem("iform-totally-logged-in")) {
     const div = document.createElement("div");
     div.id = "totally-delete-me";
     div.style.width = "100vw";
@@ -110,7 +110,7 @@ window.addEventListener("load", () => {
     div.style.position = "fixed";
     div.style.zIndex = "9999";
 
-    div.innerHTML = "<iform-login />";
+    div.innerHTML = "<iform-login></iform-login>";
     document.body.prepend(div);
   }
 });
